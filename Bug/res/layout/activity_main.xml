@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+	<EditText 
+	    android:id="@+id/ed_server_ip"
+	    android:hint="服务器IP地址"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/bt_activity_main_connect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="链接服务器" />
+    <EditText 
+        android:id="@+id/usernmae"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="用户名"
+        />
+     <Button
+        android:id="@+id/bt_activity_main_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="登陆" />
+     
+     
+     <Button
+         android:onClick="startVoice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="开始录音" />
+     <Button
+         android:onClick="stopVoice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="停止录音" />
+      
+       <SurfaceView
+        android:id="@+id/recoder_surfaceview"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp" >
+    </SurfaceView>
+</LinearLayout>

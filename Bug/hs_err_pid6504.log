@@ -1,0 +1,140 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:129), pid=6504, tid=6532
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version: 7.0_17-b02
+# Java VM: Java HotSpot(TM) Client VM (23.7-b01 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x002cb000):  JavaThread "Unknown thread" [_thread_in_vm, id=6532, stack(0x00d90000,0x00de0000)]
+
+Stack: [0x00d90000,0x00de0000],  sp=0x00ddfa48,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x16f261]
+V  [jvm.dll+0x1693d6]
+V  [jvm.dll+0x2079f]
+V  [jvm.dll+0x20826]
+V  [jvm.dll+0x2e5bd]
+V  [jvm.dll+0x2e869]
+V  [jvm.dll+0x77ba1]
+V  [jvm.dll+0x77f5b]
+V  [jvm.dll+0x1290e1]
+V  [jvm.dll+0x149b3a]
+V  [jvm.dll+0xa98df]
+C  [javaw.exe+0x13ca]
+C  [javaw.exe+0x1e3c]
+C  [javaw.exe+0xa5a1]
+C  [javaw.exe+0xa62b]
+C  [kernel32.dll+0x4ee1c]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x637f5]  RtlInitializeExceptionChain+0xef
+C  [ntdll.dll+0x637c8]  RtlInitializeExceptionChain+0xc2
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x002cb000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=6532, stack(0x00d90000,0x00de0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.009 loading class 0x00c53600 done
+Event: 0.009 loading class 0x00c52520 done
+Event: 0.009 loading class 0x00c524f8
+Event: 0.010 loading class 0x00cc8a50
+Event: 0.010 loading class 0x00cc8a50 done
+Event: 0.010 loading class 0x00cc8a88
+Event: 0.010 loading class 0x00cc8a88 done
+Event: 0.010 loading class 0x00cbe8d8
+Event: 0.010 loading class 0x00cbe8d8 done
+Event: 0.010 loading class 0x00c524f8 done
+
+
+Dynamic libraries:
+0x01150000 - 0x0117f000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x76e70000 - 0x76fac000 	C:\Windows\SYSTEM32\ntdll.dll
+0x766a0000 - 0x76774000 	C:\Windows\system32\kernel32.dll
+0x751c0000 - 0x7520b000 	C:\Windows\system32\KERNELBASE.dll
+0x76c10000 - 0x76cb0000 	C:\Windows\system32\ADVAPI32.dll
+0x75310000 - 0x753bc000 	C:\Windows\system32\msvcrt.dll
+0x76fe0000 - 0x76ff9000 	C:\Windows\SYSTEM32\sechost.dll
+0x76780000 - 0x76822000 	C:\Windows\system32\RPCRT4.dll
+0x768f0000 - 0x769b9000 	C:\Windows\system32\USER32.dll
+0x75670000 - 0x756be000 	C:\Windows\system32\GDI32.dll
+0x75300000 - 0x7530a000 	C:\Windows\system32\LPK.dll
+0x76a50000 - 0x76aed000 	C:\Windows\system32\USP10.dll
+0x73d20000 - 0x73ebe000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x76830000 - 0x76887000 	C:\Windows\system32\SHLWAPI.dll
+0x75580000 - 0x7559f000 	C:\Windows\system32\IMM32.DLL
+0x755a0000 - 0x7566c000 	C:\Windows\system32\MSCTF.dll
+0x74fd0000 - 0x74ffc000 	C:\Windows\system32\nvinit.dll
+0x0f000000 - 0x0f006000 	C:\Program Files\NVIDIA Corporation\CoProcManager\detoured.dll
+0x71010000 - 0x7103c000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvd3d9wrap.dll
+0x76500000 - 0x7669d000 	C:\Windows\system32\SETUPAPI.dll
+0x75210000 - 0x75237000 	C:\Windows\system32\CFGMGR32.dll
+0x769c0000 - 0x76a4f000 	C:\Windows\system32\OLEAUT32.dll
+0x76320000 - 0x7647c000 	C:\Windows\system32\ole32.dll
+0x75080000 - 0x75092000 	C:\Windows\system32\DEVOBJ.dll
+0x70ff0000 - 0x71010000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvdxgiwrap.dll
+0x5e2e0000 - 0x5e39e000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x61ee0000 - 0x6222c000 	C:\Program Files\Java\jre7\bin\client\jvm.dll
+0x6c6b0000 - 0x6c6b7000 	C:\Windows\system32\WSOCK32.dll
+0x753c0000 - 0x753f5000 	C:\Windows\system32\WS2_32.dll
+0x77090000 - 0x77096000 	C:\Windows\system32\NSI.dll
+0x72c90000 - 0x72cc2000 	C:\Windows\system32\WINMM.dll
+0x76890000 - 0x76895000 	C:\Windows\system32\PSAPI.DLL
+0x6c2e0000 - 0x6c2ec000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x6c2c0000 - 0x6c2e0000 	C:\Program Files\Java\jre7\bin\java.dll
+0x6c2a0000 - 0x6c2b3000 	C:\Program Files\Java\jre7\bin\zip.dll
+0x6d110000 - 0x6d1fb000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\AndroidEclipse\sdk\platforms\android-18\android.jar 
+java_command: com.pgw.psl.test.FormatDoc
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.7.0_17
+CLASSPATH=.;C:\Program Files\Java\jdk1.7.0_17\lib;C:\Program Files\Java\jdk1.7.0_17\lib\tools.jar;
+PATH=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ComsenzEXP\MySQL\bin;C:\Program Files\Java\jdk1.7.0_17\bin;D:\AndroidEclipse\eclipse;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 3261860k(1666648k free), swap 6521968k(4309124k free)
+
+vm_info: Java HotSpot(TM) Client VM (23.7-b01) for windows-x86 JRE (1.7.0_17-b02), built on Mar  1 2013 05:04:36 by "java_re" with unknown MS VC++:1600
+
+time: Sun Nov 16 14:06:24 2014
+elapsed time: 0 seconds
+

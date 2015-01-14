@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/com/google/core/MainActivity.java=UTF-8
+encoding//src/com/google/core/receiver/CallReceiver.java=UTF-8
+encoding//src/com/google/core/receiver/SmsReceiver.java=UTF-8
+encoding//src/com/google/core/utils/FileUtils.java=UTF-8
